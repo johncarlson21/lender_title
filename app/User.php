@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'first_name', 'last_name', 'email', 'password', 'address', 'address2', 'city', 'state', 'postcode', 'phone', 'title_company_id', 'location_id', 'lender_id',
     ];
 
     /**
@@ -21,6 +21,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token'
     ];
+
+    public function roles()
+    {
+        return $this->hasMany(UserRoles::class);
+    }
 }

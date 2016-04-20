@@ -9,6 +9,9 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    @role('admin')
+                    <div class="alert alert-success">You are an admin</div>
+                    @endrole
                 </div>
             </div>
         </div>

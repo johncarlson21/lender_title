@@ -1,0 +1,17 @@
+#!/bin/bash
+# Description: Script to run common laravel clear commands
+# Author: John Carlson <john@surethingweb.com>
+# Version: 1.0
+
+
+echo "Dump Autoload!\n";
+composer dump-autoload;
+echo "Dump complete!\n\n"
+
+echo "Clear Cache!\n";
+php artisan cache:clear;
+echo "Cache cleared!\n\n";
+
+echo "Clear Views!";
+php artisan view:clear;
+echo "Views cleared!";

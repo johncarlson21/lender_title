@@ -1,0 +1,6 @@
+#!/bin/bash
+# Description: Quick Start php artisan serve with host
+# Author: John Carlson <john@surethingweb.com>
+# Version: 1.0
+
+php artisan serve --host=10.0.1.22;

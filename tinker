@@ -1,0 +1,6 @@
+#!/bin/bash
+# Description: Quick Start php artisan tinker
+# Author: John Carlson <john@surethingweb.com>
+# Version: 1.0
+
+php artisan tinker;

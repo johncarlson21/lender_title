@@ -6,7 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateFeedbacksTable' => $baseDir . '/database/migrations/2016_04_26_033544_create_feedbacks_table.php',
+    'CreateLendersTable' => $baseDir . '/database/migrations/2016_04_21_052336_create_lenders_table.php',
+    'CreateLocationsTable' => $baseDir . '/database/migrations/2016_04_21_052643_create_locations_table.php',
+    'CreateOrderCommentsTable' => $baseDir . '/database/migrations/2016_04_21_052430_create_order_comments_table.php',
+    'CreateOrderFilesTable' => $baseDir . '/database/migrations/2016_04_21_052423_create_order_files_table.php',
+    'CreateOrdersTable' => $baseDir . '/database/migrations/2016_04_21_050758_create_orders_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreateTitleCompaniesTable' => $baseDir . '/database/migrations/2016_04_21_052356_create_title_companies_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'EntrustSetupTables' => $baseDir . '/database/migrations/2016_04_20_040523_entrust_setup_tables.php',
